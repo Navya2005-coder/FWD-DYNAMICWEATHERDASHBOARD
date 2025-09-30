@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Weather Dashboard</h1>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <input type="text" id="cityInput" placeholder="Enter city, village or country name" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Location Choices (multiple results) -->
+    <div id="locationChoices"></div>
+
+    <!-- Current Weather Display -->
+    <div id="currentWeather"></div>
+
+    <!-- 5-Day Forecast -->
+    <div id="forecastWeather"></div>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
+

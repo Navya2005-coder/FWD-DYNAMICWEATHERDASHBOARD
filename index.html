@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Signup - Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 8px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #signupBtn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    #loginBtn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .toggle-link {
+      margin-top: 15px;
+      cursor: pointer;
+      color: #007bff;
+      text-decoration: underline;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+
+    <input type="text" id="username" placeholder="Username" autocomplete="username" />
+    <input type="password" id="password" placeholder="Password" autocomplete="current-password" />
+
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn" style="display:none;">Sign Up</button>
+
+    <div>
+      <span id="toggleToSignup" class="toggle-link">Don't have an account? Sign Up</span>
+      <span id="toggleToLogin" class="toggle-link" style="display:none;">Already have an account? Login</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
