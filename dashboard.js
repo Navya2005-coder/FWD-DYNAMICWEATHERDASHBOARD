@@ -3,7 +3,7 @@ const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 if (!loggedInUser) {
   window.location.href = 'index.html';
 }
-const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+
 // Elements
 const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
