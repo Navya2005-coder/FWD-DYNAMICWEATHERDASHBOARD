@@ -49,7 +49,7 @@ searchBtn.addEventListener('click', () => {
 
 // Get up to 5 locations matching input string
 function getCoordinates(city) {
-  const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(city)}&limit=5&appid=${apiKey}`;
+  const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(city)}&limit=5&appid=${API_KEY}`;
   return fetch(geoUrl)
     .then(resp => resp.json())
     .then(data => {
@@ -88,7 +88,7 @@ function fetchAndDisplayWeather(lat, lon, locationName) {
 }
 
 function getCurrentWeatherByCoords(lat, lon, locationName) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
 
   fetch(url)
     .then(resp => resp.json())
@@ -113,7 +113,7 @@ function getCurrentWeatherByCoords(lat, lon, locationName) {
 }
 
 function getForecastByCoords(lat, lon) {
-  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
 
   fetch(url)
     .then(resp => resp.json())
