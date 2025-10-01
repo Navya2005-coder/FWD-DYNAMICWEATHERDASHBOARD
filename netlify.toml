@@ -1,0 +1,2 @@
+command = "sed -i 's|__API_KEY__|'\"$API_KEY\"'|g' dashboard.js"
+publish="."
