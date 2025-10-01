@@ -3,6 +3,7 @@ const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 if (!loggedInUser) {
   window.location.href = 'index.html';
 }
+const API_KEY = "__API_KEY__";
 
 // Elements
 const cityInput = document.getElementById('cityInput');
